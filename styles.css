@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], textarea, input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#filter-all, #filter-completed, #filter-incomplete {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+
+#filter-all:hover, #filter-completed:hover, #filter-incomplete:hover {
+    background-color: #d0d0d0;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+#task-list li.completed {
+    text-decoration: line-through;
+    background-color: #e0ffe0;
+}
+
+#task-list li div {
+    flex: 1;
+}
+
+#task-list li small {
+    display: block;
+    color: #666;
+}
+
+input[type="checkbox"] {
+    margin-left: 15px;
+}
+
+button.edit, button.delete {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+button.edit {
+    background-color: #ffc107;
+    color: #333;
+}
+
+button.edit:hover {
+    background-color: #e0a800;
+}
+
+button.delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
